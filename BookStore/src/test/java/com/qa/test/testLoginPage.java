@@ -12,5 +12,13 @@ public class testLoginPage {
 		System.out.println("Test1");
 		
 	}
+	
+	@Test
+	public void checkLoginPageTitle2()
+	{
+		
+		System.out.println("Test12");
+		
+	}
 
 }
