@@ -1,0 +1,54 @@
+package com.qa.testcases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class TestcaseswithDataProvider {
+	
+	@DataProvider(name="logintestdata")
+	public String[] login_testdata()
+	{
+		String[] data= new String[2];
+		data[0]="Vijay";
+		data[1]="Isha";
+		return data;
+		
+		
+	}
+	
+	
+	@BeforeMethod
+	public void setup()
+	{
+		System.out.println("Set up has been done");
+	}
+
+	
+//data provider is a conatiner that provide different set of test data to test method or testcases	
+//data provider annotationmethid retuen 4 type of values--Object 1d array, Object 2d array, Iterator ibject and Iterator Object array	
+	
+	
+	
+	@Test(dataProvider="logintestdata")
+	public void testcase_withVijayUser(String username)
+	{   
+		
+		System.out.println("Testcase executed");
+		System.out.println("Username:"+username);
+		System.out.println("Password:1234567");
+		
+	}
+	
+	
+	
+	
+	@AfterMethod
+	public void shutdown()
+	{
+		System.out.println("Shut down has been done. Thanks ");
+	}
+	
+
+}

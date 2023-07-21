@@ -1,0 +1,56 @@
+Maven---project structure and build test tool
+-open source--
+--pom.xml
+---Advantages--
+--It will synch all the related plugin or tool or libraries required to build ur project
+--through dependency--
+--say u are using selenum 4.7  after one month we have selenium 4.8-- u need to tell pom.xom on which version you ike to switch--automaticlly syn or add all the related jar for the provided version.
+
+java project--
+--remove the selenirm added libraries
+--download the new selenium jar files
+--import/add libraries in our porject
+
+
+--we need to add dependency in Maven pom.xml file to add libraries in our project
+
+--
+Group ID--generalyy company name
+Artifact ID--project name
+
+Base
+
+Page layer
+
+Test Layer
+
+
+--TestNG----Unit test frameowrk
+-Open source
+--used Annoatation for every action--it will start with @
+--each annotation should be associated with 01 method
+-- it is used to design testcases in a systematic way
+--we can define the order od testcase execution--
+--We can set dependency of testcases--
+--We get good report--HTML report
+--We can create suite- smoke, Regression
+--We can group or testcases
+
+
+--To set up TestNG
+--Install TestNG plugn in Eclispe if not there
+--Go to Market place , search TestNg and install it.
+--GO to Maven Project--pom.xml and add testNg dependency
+
+
+--Framwoard POM layers---
+First layer---Base Test
+2nd layer-- pages
+3trd--testcases
+4th layer--properties--configuration--genraral items
+5th layer--Utilities--common methods for all the pages
+6th layer-- Reports
+7th layer-- testdata--xls
+
+
+

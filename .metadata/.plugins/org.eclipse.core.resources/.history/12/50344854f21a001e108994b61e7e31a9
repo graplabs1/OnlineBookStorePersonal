@@ -1,0 +1,23 @@
+package com.qa.doubtconcept;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ScrollHandlingUsingJE {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://material.angular.io/cdk/scrolling/overview");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[@class='mdc-button mat-mdc-button mat-primary _mat-animation-noopable mat-mdc-button-base']")).click();
+		//JavascriptExecutor js = (JavascriptExecutor)driver;
+		//js.executeScript("window.scrollBy(0,1000);");
+
+	}
+
+}

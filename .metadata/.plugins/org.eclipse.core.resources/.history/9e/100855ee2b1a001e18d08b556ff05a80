@@ -1,0 +1,54 @@
+package com.qa.testcases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestcaseswithDataProvider {
+	
+	
+	@BeforeMethod
+	public void setup()
+	{
+		System.out.println("Set up has been done");
+	}
+	
+	@Test
+	public void testcase_withVijayUser()
+	{   
+		
+		System.out.println("Testcase1 executed");
+		System.out.println("Username:Vijay");
+		System.out.println("Password:1234567");
+		
+	}
+	
+	@Test
+	public void testcase_Isha()
+	{   
+		
+		System.out.println("Testcase1 executed");
+		System.out.println("Username:Isha");
+		System.out.println("Password");
+		
+	}
+	
+	@Test
+	public void testcase_Harsh()
+	{   
+		
+		System.out.println("Testcase1 executed");
+		System.out.println("Username:Harsh");
+		System.out.println("Password");
+		
+	}
+	
+	
+	@AfterMethod
+	public void shutdown()
+	{
+		System.out.println("Shut down has been done. Thanks ");
+	}
+	
+
+}
